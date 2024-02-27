@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise01 - JavaScript Basics - 1</title>
+</head>
+<body>
+    <p id="output"></p>
+    <script>
+        'use strict';
+        //Defining variables
+        let v1 = "Hello";
+        let v2 = "World!";
+        //Combining them in the variable result, then testing as template literals
+        //let result = "<h1>" + v1 + " " + v2 + "</h1>";
+        let result = `<h1>${v1} ${v2}</h1>`
+        //Finding the element with id output and adding the contents of result as the inner html
+        document.getElementById("output").innerHTML = result;
+        
+        //
+        console.log(result)
+    </script>
+</body>
+</html>

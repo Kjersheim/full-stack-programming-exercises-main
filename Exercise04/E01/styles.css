@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dad7cd;
+}
+/* Mid section container, containing the cards for the houses*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Title Houses from JSON*/
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 2rem;
+    color: #a3b18a;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Div containing houses*/
+#houses {
+    width: 80%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #3a5a40;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#houses .houseImage {
+    max-width: 100%;
+    height: auto;
+}
+#houses .houseHeader {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #16221c;
+}
+#houses p {
+    font-size: 1rem;
+    margin: 0;
+    color: #a3b18a;
+}
+#houses .houseContainer{
+    border:rgba(255, 255, 255, 0.1) solid 3px;
+    margin: 2px;
+}

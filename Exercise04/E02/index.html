@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houses from JSON, with filtering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Houses from JSON</h1>
+    </header>
+    <div class="container">
+        <section id="filters">
+            <h2>Filters</h2>
+            <div class="filter">
+                <input type="checkbox" id="price-check" onchange="filterHouses()">
+                <label for="price-check">Show houses under €1,000,000</label>
+            </div>
+            <div class="filter">
+                <input type="checkbox" id="size-check" onchange="filterHouses()">
+                <label for="size-check">Show houses under 200 sq. m.</label>
+            </div>
+        </section>
+        <section id="houses">
+            <!-- Houses will be posted here-->
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

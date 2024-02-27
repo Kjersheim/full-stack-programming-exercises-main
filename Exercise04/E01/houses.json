@@ -1,0 +1,42 @@
+[
+    {
+        "name": "House 1",
+        "image": "house1.jpg",
+        "address": "Lönnrotinkatu 3, 00120 , Helsinki",
+        "size": 170,
+        "description": "Kivipalatsi, designed by Granholm and completed in 1896, is still one of the most beautiful buildings in Helsinki.",
+        "price": 700000
+    },
+    {
+        "name": "House 2",
+        "image": "house2.jpg",
+        "address": "Telakkakatu 3 A, 00150, Helsinki",
+        "size": 180,
+        "description": "From the kitchen, double doors open the balcony into the living area. Two spacious bathrooms, one with a bathtub. Flexible room layouts with plenty of windows.",
+        "price": 800000
+    },
+    {
+        "name": "House 3",
+        "image": "house3.jpg",
+        "address": "Lönnrotinkatu 3, 00120, Helsinki",
+        "size": 210,
+        "description": "The entrance to this peaceful, fully renovated, and move-in-ready apartment is on the sheltered courtyard side. The windows of the rooms face Yrjönkatu, and the windows of the open kitchen and utility room face the courtyard.",
+        "price": 900000
+    },
+    {
+        "name": "House 4",
+        "image": "house4.jpg",
+        "address": "Kunnallisneuvoksentie 8 A, 00930 Helsinki",
+        "size": 190,
+        "description": "Now available from the finest value company in the center of Helsinki, offering the best downtown views. The historic Lackman House was completely renovated to its new glory under the leadership of construction company Hartela in 2011, respecting beautiful architecture.",
+        "price": 1100000
+    },
+    {
+        "name": "House 5",
+        "image": "house5.jpg",
+        "address": "Katajaharjuntie 18, 00200 Helsinki",
+        "size": 220,
+        "description": "A stunning and high-quality property in a prestigious area near the sea in Marjaniemi. This impeccably maintained and well-designed beauty was built in 2000 and inspected for condition in August 2014.",
+        "price": 1200000
+    }
+]

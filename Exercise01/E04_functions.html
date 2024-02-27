@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise01 - JavaScript Basics - 4</title>
+</head>
+<body>
+    <!-- Adding a form to insert numbers -->
+    <h1>Type in numbers in the boxes below:</h1>
+    <form id="numbersInput">
+      Number 1<br>
+      <input type="number" id="firstNumber" required><br>
+      Number 2<br>
+      <input type="number" id="secondNumber" required><br>
+      Number 3<br>
+      <input type="number" id="thirdNumber" required><br>
+      <!-- Button -->
+      <button type="button" onclick="findBiggestNumber()">
+        Find!
+      </button>
+    </form>
+
+    <p>
+        <br><span id="result"></span>
+    </p>
+    <script src="js/E04.js"></script>
+</body>
+</html>

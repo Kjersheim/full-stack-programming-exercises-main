@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise03 - E02 - Lists</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Creating a function that reads the array, creates needed variables and creates new li elements based on the array and inserts it in the ul element.
+        // Adding the contents inside the function so it can read it
+        function showHandicap(){
+            let hcpdata = [{ "name": "Ari", "hcp": 54 },
+                     { "name": "Pasi", "hcp": 5 },
+                     { "name": "Seppo", "hcp": 20 }];
+
+            // Defining a variable for the button from the page, adding an id to it to make it better in case there would be newer buttons added on top later. 
+            let handicapButton = document.querySelector("#hcpbutton")
+            // Similarily creating a variable for the ul-list id "hcplist"
+            let handicapList = document.getElementById("hcplist")
+
+            // Looping through the contents of the array hcpdata for the lenght of the array, incrementing the counted as a typical for loop. 
+            for (i = 0; i < hcpdata.length; i++){
+                // Defining and initializing a variable for a new li-document
+                let linode = document.createElement("li");
+                // Similarily adding a variable for the text, which is the name and hcp data from the array, based on the index
+                let litext = document.createTextNode(`${hcpdata[i].name}: ${hcpdata[i].hcp}`);
+                // appending the text to the li-element/node and then appending the li-element to the handicapList - which is the ul-element "hcplist" i fetched earlier
+                linode.appendChild(litext);
+                handicapList.appendChild(linode);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Exercise 02 - Lists</h1>
+    <!-- Adding an id to the button, as well as a type so it doesnt default as submit-->
+    <button id="hcpbutton" type="button" onclick="showHandicap()">Show Handicaps</button>
+    <!-- The li-elements from the array in the js code will end up in the ul element below-->
+    <ul id="hcplist"></ul>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise03 - E03 - Evaluation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="evaluation-container">
+        <h1>Evaluation Tool</h1>
+        <div class="grid-container">
+            <div class="column">
+                <input type="text" class="evaluation-input evaluation-input-bgcolor" value="T1" readonly>
+                <input type="number" id="points1" class="evaluation-input">
+                <!-- Chosing to try to use event listeners instead of  onBlur="gradingSystem()" 
+                     After testing I realized that if i use onBlur the user need to click outside the box for the
+                     sum and grades to update. If using event listeners it updates whenever text is written in the field
+                -->
+            </div>
+            <div class="column">
+                <input type="text" class="evaluation-input evaluation-input-bgcolor" value="T2" readonly>
+                <input type="number" id="points2" class="evaluation-input">
+            </div>
+            <div class="column">
+                <input type="text" class="evaluation-input evaluation-input-bgcolor" value="T3" readonly>
+                <input type="number" id="points3" class="evaluation-input">
+            </div>
+            <div class="column">
+                <input type="text" class="evaluation-input evaluation-input-bgcolor" value="T4" readonly>
+                <input type="number" id="points4" class="evaluation-input">
+            </div>
+        </div>
+        <span id="sum"></span>
+        <br>
+        <span id="grade"></span>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    background-image: url("images/v915-mynt-005-b.jpg");  /* https://www.freepik.com/free-vector/simple-blank-green-background-vector-business_34378515.htm#page=3&query=green%20background%20color%20css&position=10&from_view=keyword&track=aisImage by rawpixel.comon Freepik */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    background-color: #8bbd9c;
+    border-radius: 5px;
+    padding: 2px;
+}
+#todo-container{
+    min-width: 15%;
+    display: inline-block;
+    margin: 8% 8%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/*Adding a hover effect on the li-items so its easier to see which is under the cursor when clicking*/
+li:hover {
+    background-color: rgb(214, 233, 210);
+    cursor: pointer;
+}
+button {
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: darkgreen;
+  }

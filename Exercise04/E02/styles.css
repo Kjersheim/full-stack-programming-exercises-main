@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    text-align: center;
+    background-color: #3a5a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#filters {
+    background-color: #a3b18a;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#filters h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filter label {
+    font-size: 1rem;
+    color: #16221c;
+    margin-left: 10px;
+}
+
+#houses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.houseContainer {
+    flex: 1;
+    max-width: calc(33.33% - 20px); /* Three columns with a 20px gap */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.houseImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.houseHeader {
+    font-size: 1.25rem;
+    color: #16221c;
+    margin: 10px;
+}
+
+.houseDescription {
+    font-size: 1rem;
+    color: #a3b18a;
+    margin: 10px;
+}
+
+.HouseSize,
+.HousePrice {
+    font-size: 1rem;
+    color: #588157;
+    margin: 10px;
+}

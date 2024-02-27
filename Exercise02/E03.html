@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise02 - 03 callback function 2</title>
+    <link rel="stylesheet" href="styles/E01.css">
+</head>
+<body>
+
+    <script> 
+    /* For the lack of a better spot adding the text as script and comments to disect the code:
+    Initially defines a constant variable `print` and assigns an arrowfunction that takes the parameters str and taskTime.  */
+        const print = (str, taskTime) => {
+            /* Inside print, another function setTimeout, setting up an anonymous function to run a 
+            console.log string(where it specifies that the above listed parameter `str` is finished) 
+            after a time - taskTime, instead of specifying milliseconds directly */
+            setTimeout(function() {
+                console.log(`${str} finished!`)
+            }, taskTime)
+        }
+
+        /* Another function called execute, set as an arrowfunction, with parameters str, taskTime and callback. 
+        Within, it calls the callback function with str and taskTime values, to be used in the execute function further down in the task1-2 and 3, 
+        with the set timedelay taskTime*/
+        const execute = (str, taskTime, callback)  => {  
+            callback(str, taskTime)
+        }
+
+        /* I have been trying to understand syncronized and asyncronized programming in JS the past day and seeing how that work, and from¨
+        what Ive understood so far - generally line by line is read, so when nothing else is specified (no asyncronized functions are working on the `sideline`, 
+        the console.log will be printed in order of line/appearance. Despite that it looks like things happend immidiately it does take some time, however
+        the code is so simple and does not require alot of work so even the delay of 500 milliseconds is longer than it takes the machine to write out the first 4 lines of log.*/
+
+        console.log("Task1 to execution...") // printed as first line
+        execute('Task1', 2000, print) /*
+                                        Task 1 and task 2 have a setTimeout time, going as asyncronized till the timeout is over. Initially I thought - since the timeout is the same
+                                        they go back to being synced after 2000 milliseconds(and therefor print task1 then task2), however after investigating a bit further it seems that they stay async and finish when they finish. 
+                                        So depending on the processes in the functions, or the load on the computer I assume there are occasions when task 2 can be printed before task 1. The javascript runtime
+                                        will handle them concurrently, though the order of which they complete may depend on the system/js engine. They are async. As they are so easy, and im testing now after going through the code
+                                        and it does show that task 1 finishes before 2 every time I do it, but its a fairly clean system and not much load. 
+
+                                      */
+
+        console.log("Task2 to execution...")  // printed as second line
+        execute('Task2', 2000, print) // See comment for execute function for task 1.
+
+        console.log("Task3 to execution...") // printed as third line
+        execute('Task3', 500, print) // Task 3 has taskTime set as 500 milliseconds, before it executes print function that logs out the string.
+
+        console.log("Last code line executed!") // printed as fourth line
+
+    </script>
+</body>
+</html>

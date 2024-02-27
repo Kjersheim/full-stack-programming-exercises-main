@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise03 - E05 - Party</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Party App</h1>
+        <div class="lists">
+            <label for = "dropdown-list">Select a party color:</label>
+            <br>
+            <select id="dropdown-list" onchange="updateOutputColorText()">
+                <option value="">Click here!</option>
+                <option value="#f00">Red</option>
+                <option value="#0f0">Green</option>
+                <option value="#ff0">Yellow</option>
+            </select>
+            <br>
+            <label for="party-type">What party?</label>
+            <br>
+            <input type="text" id="party-type" oninput="updateOutputParty()"> 
+            <!-- Passing along the selectedColor from the dropdownlist in the change background function-->
+            <button type="button" onclick="changeBackgroundColor(selectedColor)">Change chosen background color</button>
+        </div>
+        <div class="output-container">
+            <h2>Result Area</h2>
+            <br>
+            <p id="chosencolor-output"></p>
+            <br>
+            <p id="party-output"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

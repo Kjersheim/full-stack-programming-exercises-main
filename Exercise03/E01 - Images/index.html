@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise03 - E01 - Images</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Adding a small function to show the first image on body load -->
+<body onload="showInitialImage()">
+    <h1>Exercise 01 - Images</h1>
+    <div class="image-links">
+        <!-- Using onclick() instead of AddEventListener as I find that currently easier, 
+            although interested to see how I could add that to all elements fetched-->
+        <a href="#" onclick="changeImage('image1')">Village</a>
+        <a href="#" onclick="changeImage('image2')">Rorbu</a>
+        <a href="#" onclick="changeImage('image3')">Mountaintop</a>
+        <a href="#" onclick="changeImage('image4')">Fisheye view</a>
+    </div>
+    <!-- Adding the images and tagging the first image as active, then changing the active image with JS -->
+    <div class="image-container">
+        <img id="image1" class="image active" alt="Village">
+        <img id="image2" class="image" alt="Rorbu">
+        <img id="image3" class="image" alt="Mountaintop">
+        <img id="image4" class="image" alt="Fisheye view">
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>

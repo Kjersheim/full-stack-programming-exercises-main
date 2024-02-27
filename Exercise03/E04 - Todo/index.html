@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise03 - E04 - Todo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="todo-container">
+        <h1>SimpleToDo</h1>
+        <br>
+        <div class="inputbox">
+            <label for="todo-text">ToDo:</label>
+            <br>
+            <input type="text" id="todo-text">
+        </div>
+        <br>
+        <!-- Adding onclick events pointing towards the two functions for the buttons-->
+        <button type="button" id="addBtn" onclick="addItem()">Add</button>
+        <button type="button" id="removeBtn" onclick="removeAllItems()">Remove List</button>
+        <br>
+        <!-- list items will be created and appended under the ul node-->
+        <ul id="todo-list"></ul>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

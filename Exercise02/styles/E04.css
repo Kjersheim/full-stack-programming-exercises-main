@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(133, 156, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+}
+
+div {
+    padding: 4px;
+}
+
+p {
+    font-size: 24px;
+    opacity: 0; /* Initially, set opacity to 0 for fade-in effect */
+    transform: translateY(20px); /* Initially, move paragraphs down to create the appearance of fading in from below */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Apply fade-in animation when the paragraph becomes visible */
+p.show {
+    opacity: 1;
+    transform: translateY(0);
+}

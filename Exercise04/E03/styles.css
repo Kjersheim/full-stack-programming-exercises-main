@@ -1,0 +1,44 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative; 
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.dropdown {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: white;
+    left: 50%; /* Center the dropdown horizontally */
+    transform: translateX(-50%); /* Center the dropdown horizontally */
+    top: 100%; /* Position below the search input */
+    display: none;
+}
+
+.dropdown li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown li.highlighted {
+    background-color: #ccc; 
+    font-weight: bold; 
+}
+
+.active {
+    display: block;
+}

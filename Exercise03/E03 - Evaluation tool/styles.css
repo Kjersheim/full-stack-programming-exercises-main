@@ -1,0 +1,44 @@
+body {
+    background-image: url("images/v915-mynt-005-b.jpg");  /* https://www.freepik.com/free-vector/simple-blank-green-background-vector-business_34378515.htm#page=3&query=green%20background%20color%20css&position=10&from_view=keyword&track=aisImage by rawpixel.comon Freepik */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.evaluation-container {
+    display: inline-block;
+    margin: 10% 10%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.evaluation-input {
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.evaluation-input-bgcolor{
+    background-color: rgb(95, 178, 237);
+}

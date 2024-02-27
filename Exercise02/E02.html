@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise02 - 02 callback function 1</title>
+    <link rel="stylesheet" href="styles/E01.css">
+</head>
+<body>
+    
+    <p id="result-el">Final text: </p>
+
+    <script> 
+        /* Declares the constant variable myFunctionWithCallback, and assigns as function to it as an arrow function. 
+        The function take three parameters, p1, p2 and callback. */
+        const myFunctionWithCallback = (p1, p2, callback) => {
+            // myFunctionWithCallback uses the callback function, and returns the parameters p1 and p2
+        return callback(p1, p2)
+        }
+    
+        /* A new constant variable is defined and assigned a arrowfunction, which again takes two parameters p1 and p2. 
+        Furthermore the myFunc function creates a string that would write Pizza with content-of-p1 and content-of-p2 */
+        const myFunc = (p1, p2) => `Pizza with ${p1} and ${p2}`
+
+        /* The first function is called with 3 parameters, assigning it to the constant variable result. 
+        ´ham´ and ´cheese´ will be p1 and p2, while myFunc will be the callback function within myFunctionWithCallback*/
+        const result = myFunctionWithCallback('ham', 'cheese', myFunc)
+        
+        /* The result of myFunctionWithCallback is logged to the console and a p-element. The string printed is the return of the myFunc callback*/
+        console.log(result)
+
+        resultPrint = document.getElementById("result-el");
+        resultPrint.textContent += result
+
+        /*Summary:
+        myFunctionWithCallback is defined
+        myFunc is defined
+        myFunctionWithCallback is called with ham cheese and myFunc as parameters
+        myFunctionWithCallback calls myFunc(ham, cheese)
+        myFunc returns pizza with ham and cheese
+        */
+
+
+    </script>
+</body>
+</html>
